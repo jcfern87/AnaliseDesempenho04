@@ -1,4 +1,4 @@
-[23:09, 07/12/2024] miguel Corno: -- Listar todos os livros com seus autores:
+-- Listar todos os livros com seus autores:
 SELECT Livro.Titulo AS Livro, Autor.Nome AS Autor
 FROM Livro
 INNER JOIN Autor ON Livro.ID_Autor = Autor.ID_Autor;
