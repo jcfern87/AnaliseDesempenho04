@@ -24,7 +24,7 @@ INNER JOIN Usuario ON Emprestimo.ID_Usuario = Usuario.ID_Usuario;
 SELECT Autor.Nome AS Autor, Livro.Titulo AS Livro
 FROM Autor
 INNER JOIN Livro ON Autor.ID_Autor = Livro.ID_Autor;
-[23:11, 07/12/2024] miguel Corno: -- Listar todas as categorias com o número de livros em cada uma:
+-- Listar todas as categorias com o número de livros em cada uma:
 SELECT Categoria.Nome AS Categoria, COUNT(Livro_Categoria.ID_Livro) AS Quantidade_Livros
 FROM Categoria
 LEFT JOIN Livro_Categoria ON Categoria.ID_Categoria = Livro_Categoria.ID_Categoria
